@@ -54,6 +54,8 @@ The model is deployed using **FastAPI**, allowing real-time predictions via POST
   "mean_area": 600.3,
   "mean_smoothness": 0.09
 }
+Returns: "Prediction: Malignant" or "Benign"
+
 
 💡 Tools & Libraries Used
 Python 🐍
@@ -67,6 +69,20 @@ PyCaret (for automated ML)
 FastAPI (for deployment)
 
 Uvicorn (as ASGI server)
+
+1:📌 How to Run Locally
+Clone the repository:
+git clone https://github.com/your-username/breast-cancer-classification.git
+
+2: Navigate to the API folder:
+cd breast_cancer_api
+
+3:Install dependencies:
+pip install -r requirements.txt
+
+4:Start the API:
+uvicorn main:app --reload
+
 
 🙋‍♂️ Author
 Shan Quyyoom
